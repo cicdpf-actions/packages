@@ -1,11 +1,19 @@
 {
-  "name": "ammouchan7",
+  "name": "packages",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "exit 0"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bin": {
+    "hello": "bin/hello.js"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "debug": "^4.3.7"
+  }
 }
