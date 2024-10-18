@@ -1,8 +1,9 @@
 name: Node.js Package
  
 on:
-  release:
-    types: [created]
+#   release:
+#     types: [created]
+  push:
  
 jobs:
   build:
@@ -26,7 +27,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-          registry-url: リポジトリのURL
+          registry-url: https://npm.pkg.github.com/
+
       - run: npm ci
       - run: npm publish
         env:
